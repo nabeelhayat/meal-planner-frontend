@@ -1,0 +1,58 @@
+// {
+//   "extends": [
+//     "next/core-web-vitals",
+//     "plugin:prettier/recommended",
+//     "plugin:@next/next/recommended"
+//   ],
+//   "plugins": ["prettier"],
+//   "rules": {
+//     "prettier/prettier": "error",
+//     "@next/next/no-sync-scripts": "off",
+//     "next/no-missing-client-entry": "error",
+//     "@typescript-eslint/no-unused-vars": [
+//       "error",
+//       {
+//         "argsIgnorePattern": "^_",
+//         "varsIgnorePattern": "^_"
+//       }
+//     ],
+//     "@typescript-eslint/no-explicit-any": "off",
+//     "no-console": "warn",
+//     "no-unused-vars": "off",
+//     "comma-dangle": ["error", "never"]
+//   }
+// }
+
+{
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:next/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "react-hooks", "next", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  }
+}

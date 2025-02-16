@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write .",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.4",
@@ -33,7 +34,10 @@
     "eslint": "^9.20.1",
     "eslint-config-next": "15.1.7",
     "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "postcss": "^8",
