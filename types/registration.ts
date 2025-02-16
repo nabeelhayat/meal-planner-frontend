@@ -14,15 +14,8 @@ export interface IFamily {
   updatedAt: Date;
 }
 
-export interface FormErrors {
-  familyName?: string;
-  email?: string;
-  members?: {
-    [key: number]: {
-      name?: string;
-      email?: string;
-      dietaryRestrictions?: string;
-    };
-  };
-  general?: string;
+export interface FormValues {
+  familyName: string;
+  email: string;
+  members: IFamilyMember[];
 }
