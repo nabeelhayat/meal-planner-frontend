@@ -9,7 +9,20 @@ export interface IFamilyMember {
 export interface IFamily {
   primaryEmail: string;
   members: IFamilyMember[];
-  familyName?: string;
+  familyName: string;
   createdAt: Date;
   updatedAt: Date;
+}
+
+export interface FormErrors {
+  familyName?: string;
+  email?: string;
+  members?: {
+    [key: number]: {
+      name?: string;
+      email?: string;
+      dietaryRestrictions?: string;
+    };
+  };
+  general?: string;
 }
