@@ -7,7 +7,7 @@ This repository contains the frontend application for the Family Meal Planning s
 The application requires the following environment variables:
 
 ```env
-NEXT_PUBLIC_API_URL=https://api.mealplanner.com
+NEXT_PUBLIC_API_URL=https://localhost:4000/api/v1
 ```
 ## Technology Stack
 
@@ -38,14 +38,7 @@ This project utilizes modern web technologies:
    yarn install
    ```
 
-3. Configure environment variables:
-
-   .env.local:
-   ```
-   NEXT_PUBLIC_API_URL=http://localhost:4000
-   ```
-
-4. Start the development servers:
+3. Start the development servers:
 
    ```bash
    yarn dev
@@ -58,4 +51,5 @@ This project utilizes modern web technologies:
 ## Contact
 
 Nabeel Hayat - [nabeel.hayat87@gmail.com](mailto:nabeel.hayat87@gmail.com)
+
 Project Link: [https://github.com/nabeelhayat/meal-planner-frontend.git](https://github.com/nabeelhayat/meal-planner-frontend.git)
